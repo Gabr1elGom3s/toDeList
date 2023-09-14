@@ -1,61 +1,53 @@
-/* Geral */
-*{
-    padding: 0;
-    margin: 0;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family:Helvetica;
+    font-family: Helvetica;
     color: #333;
 }
 
-body{
-    background-image: url("img/img.png");
+body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url('./img/img.png');
 }
 
-button{
+button {
     background-color: #fdfdfd;
     color: #102f5e;
     border: 2px solid #102f5e;
-    padding: .3rem .6rem;
+    padding: 0.3rem 0.6rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
-
+    transition: 0.3s;
 }
 
-button:hover{
+button:hover {
     background-color: #102f5e;
-
 }
 
-button:hover > i{
+button:hover > i {
     color: #fdfdfd;
 }
 
-button i{
+button i {
     color: #102f5e;
     font-weight: bold;
     pointer-events: none;
 }
 
-input, select{
-    padding: .25rem, .5rem;
-
+input, select {
+    padding: 0.25rem 0.5rem;
 }
 
-.hide{
+.hide {
     display: none;
-    
 }
 
-
-/* To do header*/
-
-.todoContainer{
+.todoContainer {
     max-width: 450px;
     margin: 3rem auto;
     background-color: #fdfdfd;
@@ -68,104 +60,91 @@ input, select{
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
 }
-    
-    /* To do form */
-#todoForm, #editForm{
-    padding: 1rem; 
+
+#todoForm, #editForm {
+    padding: 1rem;
     border-bottom: 1px solid #ccc;
 }
 
-#tudoForm p, #editForm p{
-    margin-bottom: .5rem;
+#todoForm p, #editForm p {
+    margin-left: 0.5rem;
     font-weight: bold;
-
 }
 
-.formControl{
+.formControl {
     display: flex;
     flex-direction: row;
 }
 
 .formControl input{
-    margin-right: .3rem;
+    margin-right: 0.3rem;
 }
 
-#cancelEditBTN{
+#cancelEditBtn {
     margin-top: 1rem;
 }
 
-#cancelEditBTN:hover{
-    color: #ccc;
+#cancelEditBtn:hover {
+    background-color: #102f5e;
+    color: #fdfdfd;
 }
 
-/* To do Toolbar*/
-#toolbar{
+#toolbar {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
     display: flex;
 }
 
-#toolbar h4{
-    margin-bottom: .5rem;
+#toolbar h4 {
+    margin-bottom: 0.5rem;
 }
 
-.search{
+.search {
     display: flex;
     flex-direction: column;
     width: 65%;
     border-right: 1px solid #ddd;
     padding-right: 1rem;
-    margin-right: 1rem;
 }
 
-.search form{
+.search form {
     display: flex;
 }
 
-
-.search input{
+.search input {
     width: 100%;
     margin-right: 0.3rem;
 }
 
-.filter{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
+button:has(i) {
+    color: #102f5e;
+    background-color: #102f5e;
 }
 
-.filter select{
-    flex: 1;
-
-}
-
-/* To do List*/
-
-.todo{
+.todo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid #ddd;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.todo h3{
+.todo h3 {
     flex: 1;
-    font-size: .9rem;
-    
+    font-size: 0.9rem;
 }
 
-.todo button{
-    margin-left: .4rem;
+.todo button {
+    margin-left: 0.4rem;
 }
 
-.done{
-    background-color: #395169;
+.done {
+    background-color: #395169
 }
 
-.done h3{
+.done h3 {
     color: #fff;
     text-decoration: line-through;
-    font-style: italic;
+    font-style: italic
 }
