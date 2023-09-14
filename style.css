@@ -47,9 +47,6 @@ input, select{
 
 }
 
-.hide{
-    
-}
 
 /* To do header*/
 
@@ -110,5 +107,60 @@ input, select{
 .search{
     display: flex;
     flex-direction: column;
+    width: 65%;
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+.search form{
+    display: flex;
+}
+
+
+.search input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+.filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter select{
+    flex: 1;
+
+}
+
+/* To do List*/
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.todo h3{
+    flex: 1;
+    font-size: .9rem;
     
+}
+
+.todo button{
+    margin-left: .4rem;
+}
+
+.done{
+    background-color: #395169;
+}
+
+.done h3{
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
 }

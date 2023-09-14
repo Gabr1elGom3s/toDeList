@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
         <script src="https://kit.fontawesome.com/9612a0d174.js" crossorigin="anonymous"></script>
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
         <title>To Do List</title>
     </head>
     <body>
         <div class="todoContainer">
             <header>
-                <h1>Tarefas</h1>
+                <h1>ToDoList</h1>
             </header>
             <form id="todoForm">
                 <p>Adicone uma tarefa: </p>
@@ -31,8 +31,8 @@
                         <i class="fa-solid fa-check-double"></i>
                     </button>
                 </div>
-                <button type="submit" id="cancelEditBTN">Cancelar</button>
-            </form> 
+                <button type="submit" id="cancelEditBtn">Cancelar</button>
+            </form>
             <div id="toolbar">
                 <div class="search">
                     <h4>Pesquisar:</h4>
@@ -51,33 +51,11 @@
                         <option value="todo">A fazer</option>
                     </select>
                 </div>
-            </div>
+              </div>
+
+              
             <div id="todoList">
-                <div class="todo">
-                    <h3>Fazer café da manhã</h3>
-                    <button class="editTodo">
-                        <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button class="removeTodo">
-                        <i class="fa-solid fa-trash"></i>
-                    </button>
-                    <button class="finishTodo">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </div>
-                <div class="todo">
-                    <h3>Fazer café da tarde</h3>
-                    <button class="editTodo">
-                        <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button class="removeTodo">
-                        <i class="fa-solid fa-trash"></i>
-                    </button>
-                    <button class="finishTodo">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </div>
             </div>
         </div>
-    </body>
-    </html>
+</body>
+</html>
