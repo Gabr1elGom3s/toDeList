@@ -47,6 +47,11 @@ input, select{
 
 }
 
+.hide{
+    display: none;
+    
+}
+
 
 /* To do header*/
 
